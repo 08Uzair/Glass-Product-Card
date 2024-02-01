@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>GLASS PRODUCT CARD</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('./images/1.png')"><img src="./images/1.png"></li>
+            <li onmouseover="changeImageSrc('./images/2.png')"><img src="./images/2.png"></li>
+            <li onmouseover="changeImageSrc('./images/3.png')"><img src="./images/3.png"></li>
+        </ul>
+        <div class="imgBox">
+            <h2>Luxury Fire-Boltt</h2>
+            <div class="imgBx">
+
+                <img src="./images/1.png" class="image" alt="">
+            </div>
+
+            <ul class="size">
+                <span>Size</span>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+    </div>
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.image').src = anything
+        }
+    </script>
+</body>
+</html>

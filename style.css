@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115%;
+    height: 100vh;
+    background: linear-gradient(to left top, #597707, #dbd1b7, #43c2f9);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 450px;
+}
+
+.container .thumb {
+    width: 100px;
+    height: 100px;
+    transform: translateX(-190px) translateY(50px);
+    position: relative;
+    z-index: 1;
+
+}
+
+.container .thumb li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.container .thumb li img {
+    transition: 0.5s ease;
+    width: 60%;
+}
+
+.container .thumb li:hover img {
+
+    transform: scale(1.2);
+}
+
+.container .imgBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .imgBox h2 {
+    color: #fff;
+    margin-top: -30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+.container .imgBox .size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container .imgBox .size span {
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-right: 5px;
+
+}
+
+.container .imgBox .size li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    margin: 5px;
+    margin-top: 4px;
+    height: 30px;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    background: #ffffff;
+    color: #23d056;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .imgBox .size li:hover {
+    transform: translateY(-10px);
+
+}
+
+.imgBx {
+    width: 300px;
+    height: 400px;
+    transition: 0.25s;
+    background-position: center;
+}
+
+.imgBx img {
+    width: 80%;
+    position: relative;
+    left: 20px;
+    background-size: cover;
+
+}
+.imgBx img:hover {
+  transform: scale(1.1);
+
+}
+
+.btn {
+    width: 151px;
+    background: #fff;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.5s ease
+}
+
+.btn:hover
+{
+    transform: scale(1.2);
+}
